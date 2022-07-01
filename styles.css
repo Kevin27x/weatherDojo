@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* NAV */
+.nav {
+    width: 100%;
+    height: 12VH;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    color: white;
+    padding: 0 10%;
+}
+
+.nav h1 {
+    font-size: 2rem;
+}
+
+.nav ul {
+    list-style: none;
+    display:flex;
+    gap: 50px;
+    font-size: 1.4rem;
+    
+}
+.nav ul li {
+    cursor: pointer;
+}
+/* MAIN */ 
+
+main {
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin: 5vh auto;
+
+}
+
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #00000040;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+
+}
+
+.main-top-temp {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+   
+
+}
+
+.main-top-temp select {
+    font-size: 1.2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.main-bot {
+    display: flex;
+    padding: 5vh 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-cards {
+    width: 23%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    box-shadow: 0 0 12px #00000010;
+}
+
+.main-cards h3 {
+    text-align: center;
+    padding: 2vh;
+    font-size: 1.4rem;
+
+}
+
+.main-cards img {
+    width: 100%;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.main-cards p {
+    text-align: center;
+    
+}
+
+.main-cards section {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 20px auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.temp-hot{
+    color: rgb(201, 9, 9);
+}
+
+.temp-cold {
+    color: rgb(15, 36, 225);
+}
+
+/* cookies */
+
+.cookies {
+    position: fixed;
+    width: 80%;
+    bottom: 8vh;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 10%;
+    background-color: #fff;
+}
+
+.cookies img {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.cookies p {
+    width: 70%;
+
+}
+
+.cookies button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: lightblue;
+    font-weight: bold;
+}

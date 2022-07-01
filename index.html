@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <h1>DojoWeather</h1>
+        <ul>
+            <li onclick="alert(`Cargando informe metereológico de ${this.textContent}...`)">Burbank</li>
+            <li onclick="alert(`Cargando informe metereológico de ${this.textContent}...`)">Chicago</li>
+            <li onclick="alert(`Cargando informe metereológico de ${this.textContent}...`)">Dallas</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-top">
+            <h2>San Jose</h2>
+            <div class="main-top-temp">
+                <p>Show temperature in </p>
+                <select name="temp" id="temp" onchange="selectTemp()">
+                    <option value="c">C°</option>
+                    <option value="f">F°</option>
+                </select>
+            </div>
+        </div>
+        <div class="main-bot">
+            <section class="main-cards">
+                <h3>Today</h3>
+                <img src="./assets/some_rain.png" alt="img">
+                <p>Some rain</p>
+                <section>
+                    <p><p class="temp-hot temperatura-numero">24</p><span>°</span></p>
+                    <p><p class="temp-cold temperatura-numero">18</p><span>°</span></p>
+                </section>
+            </section>
+            <section class="main-cards">
+                <h3>Tomorrow</h3>
+                <img src="./assets/some_sun.png" alt="img">
+                <p>Some sun</p>
+                <section>
+                    <p><p class="temp-hot temperatura-numero">27</p><span>°</span></p>
+                    <p><p class="temp-cold temperatura-numero">19</p><span>°</span></p>
+                </section>
+            </section>
+            <section class="main-cards">
+                <h3>Friday</h3>
+                <img src="./assets/some_clouds.png" alt="img">
+                <p>Some clouds</p>
+                <section>
+                    <p><p class="temp-hot temperatura-numero">21</p><span>°</span></p>
+                    <p><p class="temp-cold temperatura-numero">16</p><span>°</span></p>
+                </section>
+            </section>
+            <section class="main-cards">
+                <h3>Saturday</h3>
+                <img src="./assets/some_sun.png" alt="img">
+                <p>Some sun</p>
+                <section>
+                    <p><p class="temp-hot temperatura-numero">26</p><span>°</span></p>
+                    <p><p class="temp-cold temperatura-numero">21</p><span>°</span></p>
+                </section>
+            </section>
+            
+        </div>
+    </main>
+    <div class="cookies" id="cookies">
+        <img src="./assets/cookie.png" alt="cookie">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis ratione, fugiat ut illo cupiditate optio id veniam impedit exercitationem harum nulla eum sit veritatis qui perspiciatis officia voluptas omnis?</p>
+        <button id="btn-cookies">I Accept</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
